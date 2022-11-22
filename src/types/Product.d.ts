@@ -32,7 +32,7 @@ interface IProductResponse {
 	inventory?: 0;
 	track_inventory?: true;
 	you_save_amount?: 103;
-	meta?: any;
+	meta?: IProductMetaResponse;
 	created_at?: Date;
 	updated_at?: Date;
 	deleted_at?: Date | boolean;
