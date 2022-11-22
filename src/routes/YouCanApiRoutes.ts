@@ -1,3 +1,4 @@
+import { CategoriesRoutes } from "./CategoriesRoutes";
 import { CouponsRoutes } from "./CouponsRoutes";
 import { CustomersRoutes } from "./CustomersRoutes";
 import { OrdersRoutes } from "./OrdersRoutes";
@@ -16,4 +17,5 @@ export const youCanApiRoutes = {
 	resthooks: ResthooksRoutes,
 	customers: CustomersRoutes,
 	coupons: CouponsRoutes,
+	categories: CategoriesRoutes,
 };
