@@ -2,6 +2,7 @@ import axios from 'axios';
 import YouCanOrders from './models/Orders';
 import YouCanProductReviews from './models/ProductReviews';
 import YouCanProducts from './models/Products';
+import YouCanResthooks from './models/Resthooks';
 import YouCanStore from './models/Store';
 import { YOUCAN_BASE_URL } from './routes/YouCanApiRoutes';
 
@@ -12,6 +13,7 @@ class YouCan {
 	store: YouCanStore;
 	productReviews: YouCanProductReviews;
 	orders: YouCanOrders;
+	resthooks: YouCanResthooks;
 
 	constructor(access_token: string) {
 		
@@ -28,6 +30,7 @@ class YouCan {
 		this.store = new YouCanStore();
 		this.productReviews = new YouCanProductReviews();
 		this.orders = new YouCanOrders();
+		this.resthooks = new YouCanResthooks();
 	}
 }
 
