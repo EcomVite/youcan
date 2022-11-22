@@ -2,6 +2,7 @@ import { CategoriesRoutes } from "./CategoriesRoutes";
 import { CouponsRoutes } from "./CouponsRoutes";
 import { CustomersRoutes } from "./CustomersRoutes";
 import { LanguagesRoutes } from "./LanguagesRoutes";
+import { MenusRoutes } from "./MenusRoutes";
 import { OrdersRoutes } from "./OrdersRoutes";
 import { ProductReviewsRoutes } from "./ProductReviewsRoutes";
 import { ProductsRoutes } from "./ProductsRoutes";
@@ -20,4 +21,5 @@ export const youCanApiRoutes = {
 	coupons: CouponsRoutes,
 	categories: CategoriesRoutes,
 	languages: LanguagesRoutes,
+	menus: MenusRoutes,
 };

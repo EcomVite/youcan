@@ -3,6 +3,7 @@ import YouCanCategories from './models/Categories';
 import YouCanCoupons from './models/Coupons';
 import YouCanCustomers from './models/Customers';
 import YouCanLanguages from './models/Languages';
+import YouCanMenus from './models/Menus';
 import YouCanOrders from './models/Orders';
 import YouCanProductReviews from './models/ProductReviews';
 import YouCanProducts from './models/Products';
@@ -22,6 +23,7 @@ class YouCan {
 	coupons: YouCanCoupons;
 	categories: YouCanCategories;
 	languages: YouCanLanguages;
+	menus: YouCanMenus;
 
 	constructor(access_token: string) {
 		
@@ -43,6 +45,7 @@ class YouCan {
 		this.coupons = new YouCanCoupons();
 		this.categories = new YouCanCategories();
 		this.languages = new YouCanLanguages();
+		this.menus = new YouCanMenus();
 	}
 }
 
