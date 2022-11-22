@@ -2,8 +2,8 @@ interface IOrder {
 	customer_id: strig;
 	variants: IOrderVariant[];
 	selected_shipping_estimation_id: strig;
-	shipping_address?: IOrderAddress;
-	payment_address?: IOrderAddress;
+	shipping_address?: IAddress;
+	payment_address?: IAddress;
 	extra_fields?: any;
 	coupon_id?: strig;
 	discount?: strig;
@@ -23,7 +23,7 @@ interface IOrderDiscount {
 	reason?: string;
 }
 
-interface IOrderAddress {
+interface IAddress {
 	is_new: boolean;
 	id?: string;
 	first_name?: string;
@@ -36,6 +36,7 @@ interface IOrderAddress {
 	city?: string;
 	zip_code?: string;
 	country_code?: string;
+	is_default?: boolean;
 }
 
 interface IOrderResponse {

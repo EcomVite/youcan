@@ -1,4 +1,5 @@
 import axios from 'axios';
+import YouCanCustomers from './models/Customers';
 import YouCanOrders from './models/Orders';
 import YouCanProductReviews from './models/ProductReviews';
 import YouCanProducts from './models/Products';
@@ -14,6 +15,7 @@ class YouCan {
 	productReviews: YouCanProductReviews;
 	orders: YouCanOrders;
 	resthooks: YouCanResthooks;
+	customers: YouCanCustomers;
 
 	constructor(access_token: string) {
 		
@@ -31,6 +33,7 @@ class YouCan {
 		this.productReviews = new YouCanProductReviews();
 		this.orders = new YouCanOrders();
 		this.resthooks = new YouCanResthooks();
+		this.customers = new YouCanCustomers();
 	}
 }
 
