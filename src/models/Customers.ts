@@ -13,7 +13,7 @@ class YouCanCustomers {
 		page?: number;
 		include?: string;
 		q?: string;
-	}): Promise<{ data: ICustomerResponse[]; meta: ICustomerMetaResponse }> {
+	}): Promise<{ data: ICustomerResponse[]; meta: IMetaResponse }> {
 		let query: string = '';
 
 		if (limit) {

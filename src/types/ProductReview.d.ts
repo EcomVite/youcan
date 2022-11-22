@@ -11,16 +11,6 @@ interface IProductReviewsResponse {
 	created_at: Date;
 }
 
-interface IProductReviewsMetaResponse {
-	pagination: {
-		total: number;
-		count: number;
-		per_page: number;
-		current_page: number;
-		total_pages: number;
-		links: any;
-	};
-}
 
 interface IDeleteProductReviewsResponse {
 	status?: number;

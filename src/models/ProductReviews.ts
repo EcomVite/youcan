@@ -3,7 +3,7 @@ import { youCanApiRoutes } from '../routes/YouCanApiRoutes';
 
 class YouCanProductReviews {
 	// product reviews not completed yet
-	async getAllReviews(): Promise<{data: IProductReviewsResponse, meta: IProductReviewsMetaResponse}> {
+	async getAllReviews(): Promise<{data: IProductReviewsResponse, meta: IMetaResponse}> {
 		const response = await axios.get(youCanApiRoutes.productReviews.show);
 		return response.data;
 	}

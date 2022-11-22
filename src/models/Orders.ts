@@ -15,7 +15,7 @@ class YouCanOrders {
 		sort_field?: OrderSortingEnum;
 		include?: string;
 		q?: string;
-	}): Promise<{ data: IOrderResponse[]; meta: IOrderMetaResponse }> {
+	}): Promise<{ data: IOrderResponse[]; meta: IMetaResponse }> {
 		let query: string = '';
 		if (limit) {
 			query += `limit=${limit}&`;

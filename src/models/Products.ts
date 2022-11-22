@@ -20,7 +20,7 @@ class YouCanProducts {
 		page?: number;
 		sort_field?: ProductSortingEnum;
 		include?: string;
-	}): Promise<{ data: IProductResponse[]; meta: IProductMetaResponse }> {
+	}): Promise<{ data: IProductResponse[]; meta: IMetaResponse }> {
 		let query: string = '';
 		if (limit) {
 			query += `limit=${limit}&`;

@@ -30,17 +30,6 @@ interface ICustomerResponse {
 	address: IAddress[];
 }
 
-interface ICustomerMetaResponse {
-	pagination: {
-		total: number;
-		count: number;
-		per_page: number;
-		current_page: number;
-		total_pages: number;
-		links: any;
-	};
-}
-
 interface ICustomerUpdateDeleteResponse {
 	message?: string;
 	http_code?: number;

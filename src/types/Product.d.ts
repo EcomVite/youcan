@@ -32,14 +32,14 @@ interface IProductResponse {
 	inventory?: 0;
 	track_inventory?: true;
 	you_save_amount?: 103;
-	meta?: IProductMetaResponse;
+	meta?: IMetaResponse;
 	created_at?: Date;
 	updated_at?: Date;
 	deleted_at?: Date | boolean;
 	images?: any;
 }
 
-interface IProductMetaResponse {
+interface IMetaResponse {
 	pagination: {
 		total: number;
 		count: number;
