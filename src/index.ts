@@ -2,6 +2,7 @@ import axios from 'axios';
 import YouCanCategories from './models/Categories';
 import YouCanCoupons from './models/Coupons';
 import YouCanCustomers from './models/Customers';
+import YouCanLanguages from './models/Languages';
 import YouCanOrders from './models/Orders';
 import YouCanProductReviews from './models/ProductReviews';
 import YouCanProducts from './models/Products';
@@ -20,6 +21,7 @@ class YouCan {
 	customers: YouCanCustomers;
 	coupons: YouCanCoupons;
 	categories: YouCanCategories;
+	languages: YouCanLanguages;
 
 	constructor(access_token: string) {
 		
@@ -40,6 +42,7 @@ class YouCan {
 		this.customers = new YouCanCustomers();
 		this.coupons = new YouCanCoupons();
 		this.categories = new YouCanCategories();
+		this.languages = new YouCanLanguages();
 	}
 }
 
