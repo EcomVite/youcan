@@ -16,7 +16,6 @@ interface IProduct {
 }
 
 interface IProductResponse {
-	push(arg0: any): unknown;
 	id: string;
 	name: string;
 	slug: string;
