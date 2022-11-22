@@ -1,3 +1,20 @@
+interface IProduct {
+	name: string;
+	description?: string;
+	visibility?: boolean;
+	track_inventory?: boolean;
+	inventory?: number;
+	has_variants: boolean;
+	price: number;
+	compare_at_price?: number;
+	cost_price?: number;
+	variant_options?: any[];
+	categories?: string[];
+	variants?: any[];
+	vendors?: string[];
+	images?: any[];
+}
+
 interface IProductResponse {
 	push(arg0: any): unknown;
 	id: string;
@@ -28,8 +45,16 @@ interface IProductMetaResponse {
 		total: number;
 		count: number;
 		per_page: number;
-		current_page:number;
-		total_pages:number;
+		current_page: number;
+		total_pages: number;
 		links: any;
 	};
+}
+
+interface IDeleteProductResponse {
+	status?: number;
+	detail?: string;
+	meta?: any[];
+	message?: string;
+	type?: string;
 }
