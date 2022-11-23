@@ -6,7 +6,7 @@ import { MenusRoutes } from "./MenusRoutes";
 import { OrdersRoutes } from "./OrdersRoutes";
 import { PagesRoutes } from "./PagesRoutes";
 import { ProductInventoryRoutes } from "./ProductInventoryRoutes";
-import { ProductReviewsRoutes } from "./ProductReviewsRoutes";
+import { ReviewsRoutes } from "./ReviewsRoutes";
 import { ProductsRoutes } from "./ProductsRoutes";
 import { ResthooksRoutes } from "./ResthooksRoutes";
 import { ShippingZonesRoutes } from "./ShippingZonesRoutes";
@@ -18,7 +18,7 @@ export const YOUCAN_BASE_URL = 'https://api.youcan.shop';
 export const youCanApiRoutes = {
 	products: ProductsRoutes,
 	store: StoreRoutes,
-	productReviews: ProductReviewsRoutes,
+	reviews: ReviewsRoutes,
 	orders: OrdersRoutes,
 	resthooks: ResthooksRoutes,
 	customers: CustomersRoutes,

@@ -7,7 +7,7 @@ import YouCanMenus from './models/Menus';
 import YouCanOrders from './models/Orders';
 import YouCanPages from './models/Pages';
 import YouCanProductInventory from './models/ProductInventory';
-import YouCanProductReviews from './models/ProductReviews';
+import YouCanReviews from './models/Reviews';
 import YouCanProducts from './models/Products';
 import YouCanResthooks from './models/Resthooks';
 import YouCanShippingZones from './models/ShippingZones';
@@ -20,7 +20,7 @@ class YouCan {
 
 	products: YouCanProducts;
 	store: YouCanStore;
-	productReviews: YouCanProductReviews;
+	reviews: YouCanReviews;
 	orders: YouCanOrders;
 	resthooks: YouCanResthooks;
 	customers: YouCanCustomers;
@@ -47,7 +47,7 @@ class YouCan {
 
 		this.products = new YouCanProducts();
 		this.store = new YouCanStore();
-		this.productReviews = new YouCanProductReviews();
+		this.reviews = new YouCanReviews();
 		this.orders = new YouCanOrders();
 		this.resthooks = new YouCanResthooks();
 		this.customers = new YouCanCustomers();
