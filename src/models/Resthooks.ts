@@ -17,8 +17,8 @@ class YouCanResthooks {
 		return response.data;
 	}
 
-	async resthookUnsubscribe(resthookDd: string): Promise<IResthooksSubscribeResponse> {
-		const response = await axios.post(youCanApiRoutes.resthooks.unsubscribe(resthookDd));
+	async resthookUnsubscribe(resthookId: string): Promise<IResthooksSubscribeResponse> {
+		const response = await axios.post(youCanApiRoutes.resthooks.unsubscribe(resthookId));
 		return response.data;
 	}
 

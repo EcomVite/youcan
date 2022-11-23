@@ -30,9 +30,9 @@ class YouCanResthooks {
             return response.data;
         });
     }
-    resthookUnsubscribe(resthookDd) {
+    resthookUnsubscribe(resthookId) {
         return __awaiter(this, void 0, void 0, function* () {
-            const response = yield axios_1.default.post(YouCanApiRoutes_1.youCanApiRoutes.resthooks.unsubscribe(resthookDd));
+            const response = yield axios_1.default.post(YouCanApiRoutes_1.youCanApiRoutes.resthooks.unsubscribe(resthookId));
             return response.data;
         });
     }

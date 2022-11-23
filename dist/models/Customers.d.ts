@@ -12,7 +12,7 @@ declare class YouCanCustomers {
         data: ICustomerResponse[];
     }>;
     getCustomerById(customerId: string, include?: string): Promise<ICustomerResponse>;
-    createCustomer(order: ICustomer): Promise<ICustomerResponse>;
+    createCustomer(customer: ICustomer): Promise<ICustomerResponse>;
     deleteCustomer(customerId: string): Promise<ICustomerUpdateDeleteResponse>;
     updateCustomer(customerId: string, customer: ICustomer): Promise<ICustomerUpdateDeleteResponse>;
     createCustomerAddress(customerId: string, address: Partial<IAddress>): Promise<ICustomerResponse>;

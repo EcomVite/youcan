@@ -60,9 +60,9 @@ class YouCanCustomers {
             return response.data;
         });
     }
-    createCustomer(order) {
+    createCustomer(customer) {
         return __awaiter(this, void 0, void 0, function* () {
-            const response = yield axios_1.default.post(YouCanApiRoutes_1.youCanApiRoutes.customers.create, order);
+            const response = yield axios_1.default.post(YouCanApiRoutes_1.youCanApiRoutes.customers.create, customer);
             return response.data;
         });
     }

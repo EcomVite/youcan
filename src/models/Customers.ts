@@ -71,8 +71,8 @@ class YouCanCustomers {
 		return response.data;
 	}
 
-	async createCustomer(order: ICustomer): Promise<ICustomerResponse> {
-		const response = await axios.post(youCanApiRoutes.customers.create, order);
+	async createCustomer(customer: ICustomer): Promise<ICustomerResponse> {
+		const response = await axios.post(youCanApiRoutes.customers.create, customer);
 		return response.data;
 	}
 
