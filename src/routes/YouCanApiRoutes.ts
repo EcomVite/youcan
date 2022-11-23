@@ -10,6 +10,7 @@ import { ProductsRoutes } from "./ProductsRoutes";
 import { ResthooksRoutes } from "./ResthooksRoutes";
 import { ShippingZonesRoutes } from "./ShippingZonesRoutes";
 import { StoreRoutes } from "./StoreRoutes";
+import { UpsellsRoutes } from "./UpsellsRoutes";
 
 export const YOUCAN_BASE_URL = 'https://api.youcan.shop';
 
@@ -26,4 +27,5 @@ export const youCanApiRoutes = {
 	menus: MenusRoutes,
 	pages: PagesRoutes,
 	shippingZones: ShippingZonesRoutes,
+	upsells: UpsellsRoutes,
 };

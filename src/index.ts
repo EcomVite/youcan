@@ -11,6 +11,7 @@ import YouCanProducts from './models/Products';
 import YouCanResthooks from './models/Resthooks';
 import YouCanShippingZones from './models/ShippingZones';
 import YouCanStore from './models/Store';
+import YouCanUpsells from './models/Upsells';
 import { YOUCAN_BASE_URL } from './routes/YouCanApiRoutes';
 
 
@@ -28,6 +29,7 @@ class YouCan {
 	menus: YouCanMenus;
 	pages: YouCanPages;
 	shippingZones: YouCanShippingZones;
+	upsells: YouCanUpsells;
 
 	constructor(access_token: string) {
 		
@@ -53,6 +55,7 @@ class YouCan {
 		this.menus = new YouCanMenus();
 		this.pages = new YouCanPages();
 		this.shippingZones = new YouCanShippingZones();
+		this.upsells = new YouCanUpsells();
 	}
 }
 
