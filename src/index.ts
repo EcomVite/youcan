@@ -9,6 +9,7 @@ import YouCanPages from './models/Pages';
 import YouCanProductReviews from './models/ProductReviews';
 import YouCanProducts from './models/Products';
 import YouCanResthooks from './models/Resthooks';
+import YouCanShippingZones from './models/ShippingZones';
 import YouCanStore from './models/Store';
 import { YOUCAN_BASE_URL } from './routes/YouCanApiRoutes';
 
@@ -26,6 +27,7 @@ class YouCan {
 	languages: YouCanLanguages;
 	menus: YouCanMenus;
 	pages: YouCanPages;
+	shippingZones: YouCanShippingZones;
 
 	constructor(access_token: string) {
 		
@@ -50,6 +52,7 @@ class YouCan {
 		this.languages = new YouCanLanguages();
 		this.menus = new YouCanMenus();
 		this.pages = new YouCanPages();
+		this.shippingZones = new YouCanShippingZones();
 	}
 }
 
