@@ -5,6 +5,7 @@ import YouCanCustomers from './models/Customers';
 import YouCanLanguages from './models/Languages';
 import YouCanMenus from './models/Menus';
 import YouCanOrders from './models/Orders';
+import YouCanPages from './models/Pages';
 import YouCanProductReviews from './models/ProductReviews';
 import YouCanProducts from './models/Products';
 import YouCanResthooks from './models/Resthooks';
@@ -24,6 +25,7 @@ class YouCan {
 	categories: YouCanCategories;
 	languages: YouCanLanguages;
 	menus: YouCanMenus;
+	pages: YouCanPages;
 
 	constructor(access_token: string) {
 		
@@ -36,6 +38,7 @@ class YouCan {
 			},
 			(error: any) => Promise.reject(error)
 		);
+
 		this.products = new YouCanProducts();
 		this.store = new YouCanStore();
 		this.productReviews = new YouCanProductReviews();
@@ -46,6 +49,7 @@ class YouCan {
 		this.categories = new YouCanCategories();
 		this.languages = new YouCanLanguages();
 		this.menus = new YouCanMenus();
+		this.pages = new YouCanPages();
 	}
 }
 

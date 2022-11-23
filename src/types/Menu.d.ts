@@ -2,7 +2,6 @@ interface IMenu {
 	name: string;
 	slug: string;
 	links?: any[];
-	image?: Filestring;
 }
 
 interface IMenuResponse {
