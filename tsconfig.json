@@ -9,6 +9,6 @@
 	"outDir": "./dist",
     "skipLibCheck": true
   },
-	"include": ["src"],
+	"include": ["src", "src/examples/.ts"],
 	"exclude": ["node_modules"]
 }
