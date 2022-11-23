@@ -2,10 +2,19 @@
   "name": "@ecomvite/youcan",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "repository": {
+		"type": "git",
+		"url": "https://github.com/EcomVite/youcan"
+	},
+  "files": [
+		"/dist"
+	],
+  "keywords": ["youcan"],
   "scripts": {
-    "start": "node ./dist/test.js",
-    "dev": "tsc -w"
+    "start": "node ./dist/examples/products.js",
+    "dev": "tsc -w",
+    "build": "tsc"
   },
   "author": "",
   "license": "ISC",
