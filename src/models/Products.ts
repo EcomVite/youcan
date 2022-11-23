@@ -3,9 +3,15 @@ import { ProductSortingEnum } from '../constants/enum/Product';
 import { youCanApiRoutes } from '../routes/YouCanApiRoutes';
 
 class YouCanProducts {
-	async getProductById(productId: string): Promise<IProductResponse> {
+	async getProductById(productId: string, { include }: {include?: string}): Promise<IProductResponse> {
+
+		let query: string = '';
+		if (include) {
+			query += `include=${include}&`;
+		}
+
 		const response = await axios.get(
-			youCanApiRoutes.products.get(productId)
+			`${youCanApiRoutes.products.get(productId)}?${query}`
 		);
 		return response.data;
 	}

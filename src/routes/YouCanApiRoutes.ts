@@ -5,6 +5,7 @@ import { LanguagesRoutes } from "./LanguagesRoutes";
 import { MenusRoutes } from "./MenusRoutes";
 import { OrdersRoutes } from "./OrdersRoutes";
 import { PagesRoutes } from "./PagesRoutes";
+import { ProductInventoryRoutes } from "./ProductInventoryRoutes";
 import { ProductReviewsRoutes } from "./ProductReviewsRoutes";
 import { ProductsRoutes } from "./ProductsRoutes";
 import { ResthooksRoutes } from "./ResthooksRoutes";
@@ -28,4 +29,5 @@ export const youCanApiRoutes = {
 	pages: PagesRoutes,
 	shippingZones: ShippingZonesRoutes,
 	upsells: UpsellsRoutes,
+	productInventory: ProductInventoryRoutes,
 };
