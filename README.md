@@ -44,6 +44,8 @@ See all examples [Here](https://github.com/EcomVite/youcan/tree/main/src/example
 | Update Product | `myStore.products.updateProduct("PRODUCT_ID", productData)` |
 
 [See Example](https://github.com/EcomVite/youcan/blob/main/src/examples/products.ts)
+
+
 [See Products documentation](https://developer.youcan.shop/store-admin/products/get)
 
 ## Orders
@@ -58,6 +60,8 @@ See all examples [Here](https://github.com/EcomVite/youcan/tree/main/src/example
 | Pay Order | `myStore.orders.payOrder("ORDER_ID")` |
 
 [See Example](https://github.com/EcomVite/youcan/blob/main/src/examples/orders.ts)
+
+
 [See Orders documentation](https://developer.youcan.shop/store-admin/orders/listing)
 
 ## Reviews
@@ -75,6 +79,8 @@ See all examples [Here](https://github.com/EcomVite/youcan/tree/main/src/example
 | Approve Review | `myStore.reviews.approveReview("REVIEW_ID")` |
 
 [See Example](https://github.com/EcomVite/youcan/blob/main/src/examples/reviews.ts)
+
+
 [See Reviews documentation](https://developer.youcan.shop/store-admin/product-reviews/listing)
 
 ## Categories
@@ -88,6 +94,8 @@ See all examples [Here](https://github.com/EcomVite/youcan/tree/main/src/example
 | Delete Category | `myStore.categories.deleteCategory("CATEGORY_ID")` |
 
 [See Example](https://github.com/EcomVite/youcan/blob/main/src/examples/categories.ts)
+
+
 [See categories documentation](https://developer.youcan.shop/store-admin/categories/listing)
 
 ## Coupons
@@ -101,6 +109,8 @@ See all examples [Here](https://github.com/EcomVite/youcan/tree/main/src/example
 | Delete Coupon | `myStore.coupons.deleteCoupon("COUPON_ID")` |
 
 [See Example](https://github.com/EcomVite/youcan/blob/main/src/examples/coupons.ts)
+
+
 [See Coupons documentation](https://developer.youcan.shop/store-admin/coupons/listing)
 
 ## Customers
@@ -114,6 +124,8 @@ See all examples [Here](https://github.com/EcomVite/youcan/tree/main/src/example
 | Delete Customer | `myStore.customers.deleteCustomer("CUSTOMER_ID")` |
 
 [See Example](https://github.com/EcomVite/youcan/blob/main/src/examples/customers.ts)
+
+
 [See Customers documentation](https://developer.youcan.shop/store-admin/customers/listing)
 
 ## Languages
@@ -123,6 +135,8 @@ See all examples [Here](https://github.com/EcomVite/youcan/tree/main/src/example
 | Set Default Languages | ` myStore.languages.setLanguageDefault("LANGUAGE_ID")` |
 
 [See Example](https://github.com/EcomVite/youcan/blob/main/src/examples/languages.ts)
+
+
 [See Languages documentation](https://developer.youcan.shop/store-admin/languages/listing)
 
 ## Menus
@@ -134,6 +148,8 @@ See all examples [Here](https://github.com/EcomVite/youcan/tree/main/src/example
 | Update Menu | `myStore.menus.updateMenu("MENU_ID", menuData)` |
 
 [See Example](https://github.com/EcomVite/youcan/blob/main/src/examples/menus.ts)
+
+
 [See Menus documentation](https://developer.youcan.shop/store-admin/menus/listing)
 
 ## Pages
@@ -147,6 +163,8 @@ See all examples [Here](https://github.com/EcomVite/youcan/tree/main/src/example
 | Delete Page | `myStore.pages.deletePage("PAGE_ID")` |
 
 [See Example](https://github.com/EcomVite/youcan/blob/main/src/examples/pages.ts)
+
+
 [See Pages documentation](https://developer.youcan.shop/store-admin/pages/listing)
 
 ## Rest Hooks
@@ -157,6 +175,8 @@ See all examples [Here](https://github.com/EcomVite/youcan/tree/main/src/example
 | Unsubscribe from event Hook | `myStore.resthooks.resthookUnsubscribe("RESTHOOK_ID")` |
 
 [See Example](https://github.com/EcomVite/youcan/blob/main/src/examples/resthooks.ts)
+
+
 [See Rest Hooks documentation](https://developer.youcan.shop/store-admin/resthooks/listing)
 
 ## Product Inventory
@@ -166,6 +186,8 @@ See all examples [Here](https://github.com/EcomVite/youcan/tree/main/src/example
 | Decerement Product Inventory | `myStore.productInventory.DecrementProductInventory("PRODUCT_ID", inventoryData)` |
 
 [See Example](https://github.com/EcomVite/youcan/blob/main/src/examples/productInventory.ts)
+
+
 [See Product Inventory documentation](https://developer.youcan.shop/store-admin/product-inventory/increment)
 
 ## Shipping Zones
@@ -181,6 +203,8 @@ See all examples [Here](https://github.com/EcomVite/youcan/tree/main/src/example
 | Update Shipping Rate | `myStore.coupons.createShippingRate("SHIPPING_ZONE_ID", shippingRatesDate)` |
 
 [See Example](https://github.com/EcomVite/youcan/blob/main/src/examples/shippingZones.ts)
+
+
 [See Shipping Zones documentation](https://developer.youcan.shop/store-admin/shipping-zones/listing)
 
 ## Store
@@ -192,6 +216,8 @@ See all examples [Here](https://github.com/EcomVite/youcan/tree/main/src/example
 | Create Support Ticket | `myStore.store.createSupportTicket(ticketData)` |
 
 [See Example](https://github.com/EcomVite/youcan/blob/main/src/examples/store.ts)
+
+
 [See Store documentation](https://developer.youcan.shop/store-admin/store/details)
 
 ## Upsells
@@ -205,6 +231,9 @@ See all examples [Here](https://github.com/EcomVite/youcan/tree/main/src/example
 | Delete Upsell | `myStore.coupons.deleteUpsell("UPSELL_ID")` |
 
 [See Example](https://github.com/EcomVite/youcan/blob/main/src/examples/upsells.ts)
+
+
+
 [See Upsells documentation](https://developer.youcan.shop/store-admin/upsells/listing)
 
 
