@@ -1,4 +1,4 @@
-import YouCan from "../index";
+import YouCan from "youcan";
 
 const myStore = new YouCan("YOUCAN_STORE_ACCESS_TOKEN");
 
