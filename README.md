@@ -43,6 +43,7 @@ See all examples [Here](https://github.com/EcomVite/youcan/tree/main/src/example
 | Create Product | `myStore.products.createProduct(productData)` |
 | Update Product | `myStore.products.updateProduct("PRODUCT_ID", productData)` |
 
+[See Example](https://github.com/EcomVite/youcan/blob/main/src/examples/products.ts)
 [See Products documentation](https://developer.youcan.shop/store-admin/products/get)
 
 ## Orders
@@ -56,6 +57,7 @@ See all examples [Here](https://github.com/EcomVite/youcan/tree/main/src/example
 | Fulfill Order | `myStore.orders.fulfillOrder({ orderId: "ORDER_ID" })` |
 | Pay Order | `myStore.orders.payOrder("ORDER_ID")` |
 
+[See Example](https://github.com/EcomVite/youcan/blob/main/src/examples/orders.ts)
 [See Orders documentation](https://developer.youcan.shop/store-admin/orders/listing)
 
 ## Reviews
@@ -72,6 +74,7 @@ See all examples [Here](https://github.com/EcomVite/youcan/tree/main/src/example
 | Reject Review | `myStore.reviews.rejectReview("REVIEW_ID")` |
 | Approve Review | `myStore.reviews.approveReview("REVIEW_ID")` |
 
+[See Example](https://github.com/EcomVite/youcan/blob/main/src/examples/reviews.ts)
 [See Reviews documentation](https://developer.youcan.shop/store-admin/product-reviews/listing)
 
 ## Categories
@@ -84,6 +87,7 @@ See all examples [Here](https://github.com/EcomVite/youcan/tree/main/src/example
 | Update Category | `myStore.categories.updateCategory("CATEGORY_ID", categoryData)` |
 | Delete Category | `myStore.categories.deleteCategory("CATEGORY_ID")` |
 
+[See Example](https://github.com/EcomVite/youcan/blob/main/src/examples/categories.ts)
 [See categories documentation](https://developer.youcan.shop/store-admin/categories/listing)
 
 ## Coupons
@@ -96,6 +100,7 @@ See all examples [Here](https://github.com/EcomVite/youcan/tree/main/src/example
 | Update Coupon | `myStore.coupons.updateCoupon("COUPON_ID", couponData)` |
 | Delete Coupon | `myStore.coupons.deleteCoupon("COUPON_ID")` |
 
+[See Example](https://github.com/EcomVite/youcan/blob/main/src/examples/coupons.ts)
 [See Coupons documentation](https://developer.youcan.shop/store-admin/coupons/listing)
 
 ## Customers
@@ -108,6 +113,7 @@ See all examples [Here](https://github.com/EcomVite/youcan/tree/main/src/example
 | Update Customer | `myStore.customers.updateCustomer("CUSTOMER_ID", customerData)` |
 | Delete Customer | `myStore.customers.deleteCustomer("CUSTOMER_ID")` |
 
+[See Example](https://github.com/EcomVite/youcan/blob/main/src/examples/customers.ts)
 [See Customers documentation](https://developer.youcan.shop/store-admin/customers/listing)
 
 ## Languages
@@ -116,6 +122,7 @@ See all examples [Here](https://github.com/EcomVite/youcan/tree/main/src/example
 | Get All Languages | `myStore.languages.getLanguages()` |
 | Set Default Languages | ` myStore.languages.setLanguageDefault("LANGUAGE_ID")` |
 
+[See Example](https://github.com/EcomVite/youcan/blob/main/src/examples/languages.ts)
 [See Languages documentation](https://developer.youcan.shop/store-admin/languages/listing)
 
 ## Menus
@@ -126,6 +133,7 @@ See all examples [Here](https://github.com/EcomVite/youcan/tree/main/src/example
 | Create Menu | `myStore.menus.createMenu(menuData)` |
 | Update Menu | `myStore.menus.updateMenu("MENU_ID", menuData)` |
 
+[See Example](https://github.com/EcomVite/youcan/blob/main/src/examples/menus.ts)
 [See Menus documentation](https://developer.youcan.shop/store-admin/menus/listing)
 
 ## Pages
@@ -138,6 +146,7 @@ See all examples [Here](https://github.com/EcomVite/youcan/tree/main/src/example
 | Update Page | `myStore.pages.updatePage("PAGE_ID", pageData)` |
 | Delete Page | `myStore.pages.deletePage("PAGE_ID")` |
 
+[See Example](https://github.com/EcomVite/youcan/blob/main/src/examples/pages.ts)
 [See Pages documentation](https://developer.youcan.shop/store-admin/pages/listing)
 
 ## Rest Hooks
@@ -147,6 +156,7 @@ See all examples [Here](https://github.com/EcomVite/youcan/tree/main/src/example
 | Subscribe to event Hook | `myStore.resthooks.resthookSubscribe("EVENT", "TARGET_URL")` |
 | Unsubscribe from event Hook | `myStore.resthooks.resthookUnsubscribe("RESTHOOK_ID")` |
 
+[See Example](https://github.com/EcomVite/youcan/blob/main/src/examples/resthooks.ts)
 [See Rest Hooks documentation](https://developer.youcan.shop/store-admin/resthooks/listing)
 
 ## Product Inventory
@@ -155,6 +165,7 @@ See all examples [Here](https://github.com/EcomVite/youcan/tree/main/src/example
 | Incerement Product Inventory | `myStore.productInventory.IncrementProductInventory("PRODUCT_ID", inventoryData)` |
 | Decerement Product Inventory | `myStore.productInventory.DecrementProductInventory("PRODUCT_ID", inventoryData)` |
 
+[See Example](https://github.com/EcomVite/youcan/blob/main/src/examples/productInventory.ts)
 [See Product Inventory documentation](https://developer.youcan.shop/store-admin/product-inventory/increment)
 
 ## Shipping Zones
@@ -169,6 +180,7 @@ See all examples [Here](https://github.com/EcomVite/youcan/tree/main/src/example
 | Create Shipping Rate | `myStore.coupons.createShippingRate("SHIPPING_ZONE_ID", shippingRatesDate)` |
 | Update Shipping Rate | `myStore.coupons.createShippingRate("SHIPPING_ZONE_ID", shippingRatesDate)` |
 
+[See Example](https://github.com/EcomVite/youcan/blob/main/src/examples/shippingZones.ts)
 [See Shipping Zones documentation](https://developer.youcan.shop/store-admin/shipping-zones/listing)
 
 ## Store
@@ -179,6 +191,7 @@ See all examples [Here](https://github.com/EcomVite/youcan/tree/main/src/example
 | Get Store Profit | `myStore.store.getProfit()` |
 | Create Support Ticket | `myStore.store.createSupportTicket(ticketData)` |
 
+[See Example](https://github.com/EcomVite/youcan/blob/main/src/examples/store.ts)
 [See Store documentation](https://developer.youcan.shop/store-admin/store/details)
 
 ## Upsells
@@ -191,6 +204,7 @@ See all examples [Here](https://github.com/EcomVite/youcan/tree/main/src/example
 | Update Upsell | `myStore.coupons.updateUpsell("UPSELL_ID", upsellData)` |
 | Delete Upsell | `myStore.coupons.deleteUpsell("UPSELL_ID")` |
 
+[See Example](https://github.com/EcomVite/youcan/blob/main/src/examples/upsells.ts)
 [See Upsells documentation](https://developer.youcan.shop/store-admin/upsells/listing)
 
 
@@ -198,7 +212,7 @@ See all examples [Here](https://github.com/EcomVite/youcan/tree/main/src/example
 #### This package costs me time to make and maintain every time.
 [I am very 😀 about every coffee!]
 
-<a href="https://www.buymeacoffee.com/imranbaali" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" height="41" width="174"></a>
+<a href="https://bit.ly/youcan-sdk" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" height="41" width="174"></a>
 
 [npm-downloads-image]: https://badgen.net/npm/dm/youcan
 [npm-downloads-url]: https://npmcharts.com/compare/youcan?minimal=true
