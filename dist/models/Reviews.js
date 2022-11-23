@@ -47,27 +47,27 @@ class YouCanReviews {
             return { data: youCanReviews };
         });
     }
-    getReviewById(productReviewId) {
+    getReviewById(reviewId) {
         return __awaiter(this, void 0, void 0, function* () {
-            const response = yield axios_1.default.get(YouCanApiRoutes_1.youCanApiRoutes.reviews.get(productReviewId));
+            const response = yield axios_1.default.get(YouCanApiRoutes_1.youCanApiRoutes.reviews.get(reviewId));
             return response.data;
         });
     }
-    createReview(productId, productReview) {
+    createReview(productId, review) {
         return __awaiter(this, void 0, void 0, function* () {
-            const response = yield axios_1.default.post(YouCanApiRoutes_1.youCanApiRoutes.reviews.create(productId), productReview);
+            const response = yield axios_1.default.post(YouCanApiRoutes_1.youCanApiRoutes.reviews.create(productId), review);
             return response.data;
         });
     }
-    updateReview(productReviewId, productReview) {
+    updateReview(reviewId, review) {
         return __awaiter(this, void 0, void 0, function* () {
-            const response = yield axios_1.default.put(YouCanApiRoutes_1.youCanApiRoutes.reviews.update(productReviewId), productReview);
+            const response = yield axios_1.default.put(YouCanApiRoutes_1.youCanApiRoutes.reviews.update(reviewId), review);
             return response.data;
         });
     }
-    deleteReview(productReviewId) {
+    deleteReview(reviewId) {
         return __awaiter(this, void 0, void 0, function* () {
-            const response = yield axios_1.default.delete(YouCanApiRoutes_1.youCanApiRoutes.reviews.delete(productReviewId));
+            const response = yield axios_1.default.delete(YouCanApiRoutes_1.youCanApiRoutes.reviews.delete(reviewId));
             return response.data;
         });
     }

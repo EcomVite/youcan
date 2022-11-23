@@ -34,7 +34,7 @@ myStore.products
 	});
 ```
 
-see all examples of usage [here](https://github.com/EcomVite/youcan/tree/main/src/examples)
+See all examples [Here](https://github.com/EcomVite/youcan/tree/main/src/examples)
 
 ## Products
 | Product Action | Responsable Method |
@@ -44,6 +44,32 @@ see all examples of usage [here](https://github.com/EcomVite/youcan/tree/main/sr
 | Get Product By ID | `myStore.products.getProductById("PRODUCT_ID")` |
 | Create Product | `myStore.products.createProduct(productData)` |
 | Update Product | `myStore.products.updateProduct("PRODUCT_ID", productData)` |
+
+## Orders
+| Order Action | Responsable Method |
+| - | - |
+| Get All Orders | `myStore.orders.getAllOrders()` |
+| Get Orders with sort, include, limit and page | ` myStore.orders.getOrders({ })` |
+| Get Order By ID | `myStore.orders.getOrderById("ORDER_ID")` |
+| Create Order | `myStore.orders.createOrder(orderData)` |
+| Close Order | `myStore.orders.closeOrder(orderData)` |
+| Fulfill Order | `myStore.orders.fulfillOrder({ orderId: "ORDER_ID" })` |
+| Pay Order | `myStore.orders.payOrder("ORDER_ID")` |
+
+## Reviews
+| Reviews Action | Responsable Method |
+| - | - |
+| Get All Reviews | `myStore.reviews.getAllReviews()` |
+| Get Reviews with sort, include, limit and page | ` myStore.reviews.getReviews({ })` |
+| Get Review By ID | `myStore.reviews.getReviewById("REVIEW_ID")` |
+| Create Review | `myStore.reviews.createReview("PRODUCT_ID", reviewData)` |
+| Update Review | `myStore.reviews.updateReview("REVIEW_ID", reviewData)` |
+| Delete Review | `myStore.reviews.deleteReview("REVIEW_ID")` |
+| Get Product Reviews with sort, include, limit and page | `myStore.reviews.getReviewsByProductId("PRODUCT_ID", {})` |
+| Get All Product Reviews | `myStore.reviews.getAllReviewsByProductId("PRODUCT_ID")` |
+| Reject Review | `myStore.reviews.rejectReview("REVIEW_ID")` |
+| Approve Review | `myStore.reviews.approveReview("REVIEW_ID")` |
+
 
 
 

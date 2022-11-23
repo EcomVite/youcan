@@ -3,8 +3,8 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const index_1 = __importDefault(require("../index"));
-const myStore = new index_1.default("YOUCAN_STORE_ACCESS_TOKEN");
+const youcan_1 = __importDefault(require("youcan"));
+const myStore = new youcan_1.default("YOUCAN_STORE_ACCESS_TOKEN");
 myStore.pages
     .getPages({ limit: 1 })
     .then((pages) => {

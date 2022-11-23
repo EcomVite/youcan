@@ -11,10 +11,10 @@ declare class YouCanReviews {
     getAllReviews(): Promise<{
         data: IReviewResponse[];
     }>;
-    getReviewById(productReviewId: string): Promise<IReviewResponse>;
-    createReview(productId: string, productReview: IReview): Promise<IReviewResponse>;
-    updateReview(productReviewId: string, productReview: IReview): Promise<IDeleteReviewResponse>;
-    deleteReview(productReviewId: string): Promise<IDeleteReviewResponse>;
+    getReviewById(reviewId: string): Promise<IReviewResponse>;
+    createReview(productId: string, review: IReview): Promise<IReviewResponse>;
+    updateReview(reviewId: string, review: IReview): Promise<IDeleteReviewResponse>;
+    deleteReview(reviewId: string): Promise<IDeleteReviewResponse>;
     getReviewsByProductId(productId: string, { limit, page, sort_field, }: {
         limit?: number;
         page?: number;

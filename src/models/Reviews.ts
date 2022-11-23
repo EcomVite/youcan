@@ -47,41 +47,41 @@ class YouCanReviews {
 		return { data: youCanReviews };
 	}
 
-	async getReviewById(productReviewId: string): Promise<IReviewResponse> {
+	async getReviewById(reviewId: string): Promise<IReviewResponse> {
 		const response = await axios.get(
-			youCanApiRoutes.reviews.get(productReviewId)
+			youCanApiRoutes.reviews.get(reviewId)
 		);
 		return response.data;
 	}
 
 	async createReview(
 		productId: string,
-		productReview: IReview
+		review: IReview
 	): Promise<IReviewResponse> {
 		const response = await axios.post(
 			youCanApiRoutes.reviews.create(productId),
-			productReview
+			review
 		);
 		return response.data;
 	}
 
 	async updateReview(
-		productReviewId: string,
-		productReview: IReview
+		reviewId: string,
+		review: IReview
 	): Promise<IDeleteReviewResponse> {
 		const response = await axios.put(
-			youCanApiRoutes.reviews.update(productReviewId),
-			productReview
+			youCanApiRoutes.reviews.update(reviewId),
+			review
 		);
 
 		return response.data;
 	}
 
 	async deleteReview(
-		productReviewId: string
+		reviewId: string
 	): Promise<IDeleteReviewResponse> {
 		const response = await axios.delete(
-			youCanApiRoutes.reviews.delete(productReviewId)
+			youCanApiRoutes.reviews.delete(reviewId)
 		);
 		return response.data;
 	}
