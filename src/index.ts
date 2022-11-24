@@ -40,6 +40,7 @@ class YouCan {
 		axios.interceptors.request.use(
 			(config: any) => {
 				config.headers['Authorization'] = `Bearer ${access_token}`;
+				config.headers['Accept-Encoding'] = "application/json";
 				return config;
 			},
 			(error: any) => Promise.reject(error)

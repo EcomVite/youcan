@@ -24,6 +24,7 @@ class YouCan {
         axios_1.default.defaults.baseURL = YouCanApiRoutes_1.YOUCAN_BASE_URL;
         axios_1.default.interceptors.request.use((config) => {
             config.headers['Authorization'] = `Bearer ${access_token}`;
+            config.headers['Accept-Encoding'] = "application/json";
             return config;
         }, (error) => Promise.reject(error));
         this.products = new Products_1.default();
